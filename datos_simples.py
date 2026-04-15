@@ -3,6 +3,15 @@
 # Con el símbolo # escribo comentarios que no se ejecutan con el código
 
 variable_texto = 'Buen día queridos estudiantes'
+variable_texto_multiple_lineas = '''
+esto es un texto
+en múltiples líneas
+'''
+variable_texto_multiple_lineas = """
+esto es un texto
+en múltiples líneas
+"""
+
 variable_entero = 25
 variable_decimal = 2.5
 variable_booleana = True
