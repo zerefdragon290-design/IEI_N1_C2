@@ -38,18 +38,28 @@ def division(a,b):
     except ZeroDivisionError:
         print('No se puede dividir por 0.')
     except Exception as error:
+<<<<<<< HEAD
         print(f'Tipo Error: {type(error)}')
         print(f'Mensaje Error: {error}')
+=======
+        print(f'No se puede dividir por el siguiente error: {error}')
+>>>>>>> 9b9e22e4fa69c0b1545652e5e12302acf917cdee
 
 def convertir_float(valor):
     try:
         num_decimal = float(valor)
         return num_decimal
     except ValueError: 
+<<<<<<< HEAD
             print(f'No se puede convertir "{valor}" a decimal')
     except Exception as error:
         print(f'Tipo Error: {type(error)}')
         print(f'Mensaje Error: {error}')
+=======
+            print('No se puede convertir el valor ingresado a decimal')
+    except Exception as error:
+        print(f'No se puede realizar la conversión por el siguiente error: {error}')
+>>>>>>> 9b9e22e4fa69c0b1545652e5e12302acf917cdee
 
 def solicitar_datos():
     numero1 = convertir_float(input('Ingrese el primer número: '))
@@ -57,9 +67,14 @@ def solicitar_datos():
     return(numero1,numero2)
 
 ciclo = True
+<<<<<<< HEAD
 titulo = 'Súper Calculadora!!'
 print(titulo)
 print('=' * len(titulo))
+=======
+print('Mi Primera Súper Calculadora en Python!!')
+print('========================================')
+>>>>>>> 9b9e22e4fa69c0b1545652e5e12302acf917cdee
 
 while ciclo == True:
     print()
@@ -72,6 +87,7 @@ while ciclo == True:
     opcion = input('Seleccione su opción [0-4]: ')
     opciones_validas = ['0','1','2','3','4']
     if opcion in opciones_validas:
+<<<<<<< HEAD
         if opcion != '0':
             operacion = ''          
             num1,num2 = solicitar_datos()
@@ -92,5 +108,26 @@ while ciclo == True:
         else:
             ciclo = False
             print('Saliendo del sistema...')
+=======
+        if opcion == '0':
+            print('Gracias por usar la calculadora, vuelva pronto!')
+            ciclo = False
+        elif opcion == '1':
+            num1,num2 = solicitar_datos()
+            resultado = suma(num1,num2)
+            print(f'El resultado de la suma es: {resultado}')
+        elif opcion == '2':
+            num1,num2 = solicitar_datos()
+            resultado = resta(num1,num2)
+            print(f'El resultado de la resta es: {resultado}')
+        elif opcion == '3':
+            num1,num2 = solicitar_datos()
+            resultado = multiplicacion(num1,num2)
+            print(f'El resultado de la multiplicación es: {resultado}')
+        elif opcion == '4':
+            num1,num2 = solicitar_datos()
+            resultado = division(num1,num2)
+            print(f'El resultado de la división es: {resultado}')
+>>>>>>> 9b9e22e4fa69c0b1545652e5e12302acf917cdee
     else:
         print('Opción NO corresponde, ingrese nuevamente...')
