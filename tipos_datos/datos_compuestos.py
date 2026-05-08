@@ -59,3 +59,7 @@ print(mi_primera_tupla[0])
 
 # La tupla NO permite asignar un nuevo valor para los elementos, la siguiente asignación es inválida
 # mi_primera_tupla[0] = nombre_personal
+
+# Podemos incluir colecciones de elementos dentro de colecciones de elementos
+nueva_lista = [mi_primer_diccionario,mi_primer_conjunto,mi_primera_tupla,mi_primera_lista]
+print(nueva_lista)
